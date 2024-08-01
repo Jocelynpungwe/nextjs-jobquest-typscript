@@ -5,7 +5,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { Toaster } from '@/components/ui/toaster'
 
-const provider = ({ children }: { children: React.ReactNode }) => {
+const Provider = ({ children }: { children: React.ReactNode }) => {
   const [queryClient] = useState(() => {
     return new QueryClient({
       defaultOptions: {
@@ -34,4 +34,4 @@ const provider = ({ children }: { children: React.ReactNode }) => {
   )
 }
 
-export default provider
+export default Provider
